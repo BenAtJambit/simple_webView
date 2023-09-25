@@ -1,9 +1,7 @@
 package com.example.testwebapp
 
 import android.os.Bundle
-import android.util.Log
-import android.webkit.ConsoleMessage
-import android.webkit.WebChromeClient
+import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.ComponentActivity
@@ -41,8 +39,8 @@ fun WebSite() {
             settings.apply {
                 javaScriptEnabled = true
 //                domStorageEnabled = true
-//                mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
-//                userAgentString = "$userAgentString (App; wv)"
+                mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
+                userAgentString = "$userAgentString (App; wv)"
             }
 
 //            webChromeClient = object : WebChromeClient() {
