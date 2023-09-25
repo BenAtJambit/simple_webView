@@ -1,6 +1,9 @@
 package com.example.testwebapp
 
 import android.os.Bundle
+import android.util.Log
+import android.webkit.ConsoleMessage
+import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.ComponentActivity
@@ -42,7 +45,19 @@ fun WebSite() {
 //                userAgentString = "$userAgentString (App; wv)"
             }
 
-            loadUrl("https://dev-oneepaper.goettinger-tageblatt.de/?fcms-opunlock=DyIz9h2KhF")
+//            webChromeClient = object : WebChromeClient() {
+//                override fun onConsoleMessage(consoleMessage: ConsoleMessage): Boolean {
+//                    // Hier wird das Web-Ereignisprotokoll erfasst
+//                    val logMessage = "${consoleMessage.message()} at ${consoleMessage.sourceId()}:${consoleMessage.lineNumber()}"
+//                    Log.d("WebView Console", logMessage)
+//
+//                    // Aktualisiere die Composable-Anzeige mit den Protokollen
+////                    consoleLogs += logMessage + "\n"
+//                    return true
+//                }
+//            }
+
+            loadUrl("https://dev-oneepaper.goettinger-tageblatt.de/epaper/?outputType=app")
         }
     })
 }
