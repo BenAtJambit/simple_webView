@@ -1,7 +1,6 @@
 package com.example.testwebapp
 
 import android.os.Bundle
-import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.ComponentActivity
@@ -38,9 +37,9 @@ fun WebSite() {
             webViewClient = WebViewClient()
             settings.apply {
                 javaScriptEnabled = true
-                domStorageEnabled = true
-                mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
-                userAgentString = "$userAgentString (App; wv)"
+//                domStorageEnabled = true
+//                mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
+//                userAgentString = "$userAgentString (App; wv)"
             }
 
             loadUrl("https://dev-oneepaper.goettinger-tageblatt.de/?fcms-opunlock=DyIz9h2KhF")
