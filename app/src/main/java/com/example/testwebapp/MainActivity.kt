@@ -39,7 +39,7 @@ fun WebSite() {
             settings.apply {
                 javaScriptEnabled = true
                 domStorageEnabled = true
-                mixedContentMode = WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
+                mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
                 userAgentString = "$userAgentString (App; wv)"
             }
 
